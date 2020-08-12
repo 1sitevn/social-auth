@@ -1,0 +1,38 @@
+{
+  "name": "onesite/social-auth",
+  "description": "Social Authentication",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "1Site.vn",
+      "email": "hotro@1site.vn",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "sonata-project/google-authenticator": "^2.2",
+    "onesite/core": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OneSite\\SocialAuth\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "helpers.php"
+    ],
+    "psr-4": {
+      "OneSite\\SocialAuth\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x.x-dev"
+    }
+  }
+}
