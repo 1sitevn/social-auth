@@ -54,7 +54,7 @@ class GoogleTwoFactorAuthTest extends TestCase
     public function testVerify()
     {
         $data = $this->service->verify([
-            'code' => '541722',
+            'code' => '644291',
             'secret' => '5CILZ2MRXAR2P57S'
         ]);
 

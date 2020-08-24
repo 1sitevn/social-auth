@@ -22,8 +22,10 @@ class GoogleTwoFactorAuth implements SocialAuthInterface
     {
         $username = !empty($params['username']) ? $params['username'] : '';
         $secret = !empty($params['secret']) ? $params['secret'] : '';
+        $issuer = !empty($params['issuer']) ? $params['issuer'] : null;
+        $size = !empty($params['size']) ? $params['size'] : 200;
 
-        return GoogleQrUrl::generate($username, $secret);
+        return GoogleQrUrl::generate($username, $secret, $issuer, $size);
     }
 
     /**
